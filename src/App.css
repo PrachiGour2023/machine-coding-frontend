@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.todo-block {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+}
