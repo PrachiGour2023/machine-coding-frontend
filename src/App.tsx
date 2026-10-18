@@ -1,12 +1,12 @@
 import "./App.css"
 import { ErrorBoundary } from "./ErrorBoundary";
-import KanbanBoard from "./KanbanBoard";
+import PaginatedBookmarkList from "./PaginatedBookmarkList";
 
 export default function App() {
 
   return (
     <ErrorBoundary>
-      <KanbanBoard />
+      <PaginatedBookmarkList />
     </ErrorBoundary>
   );
 }
