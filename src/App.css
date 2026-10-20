@@ -1,31 +1,13 @@
-.header {
+.container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.article-container {
-  display: flex;
-  justify-content:space-between;
-  align-items:baseline;
-  border: 1px lightgray solid;
-  border-radius: 5px;
-  padding: 0px 20px;
-  margin-top: 8px;
-}
 
-.pagination {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 5px;
-}
-
-.bookmark {
+.rating {
+  font-size: 32px;
+  display: inline-block;
   cursor: pointer;
-  color: gray;
-}
-
-.bookmark.active {
-  color: yellow;
 }

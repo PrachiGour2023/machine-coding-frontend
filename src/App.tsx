@@ -1,12 +1,12 @@
 import "./App.css"
 import { ErrorBoundary } from "./ErrorBoundary";
-import PaginatedBookmarkList from "./PaginatedBookmarkList";
+import StarRating from "./StarRating"
 
 export default function App() {
 
   return (
     <ErrorBoundary>
-      <PaginatedBookmarkList />
+      <StarRating />
     </ErrorBoundary>
   );
 }
