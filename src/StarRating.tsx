@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const StarRating = () => {
 
-  const [rating, setRating] = useState(0)
+  const [rating, setRating] = useState<number>(0)
   return (
     <div className='container'>
       <h1>Star Rating</h1>
 
       <div >
         {
-          [1, 2, 3, 4, 5].map(star => {
+          [1, 2, 3, 4, 5].map((star: number) => {
             return (
               <span
                 key={star}
