@@ -5,9 +5,94 @@
   flex-direction: column;
 }
 
+.section {
+   width: 50%;
+}
 
-.rating {
-  font-size: 32px;
-  display: inline-block;
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header span {
+  font-weight:bolder;
+  font-size: 20px;
+}
+
+.header button {
+  background-color: rgb(124, 211, 124);
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input , .form select {
+  padding: 10px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.transaction-btn {
+  background-color: rgb(124, 124, 244);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.display-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display-details span {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.search {
+  padding: 10px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  width: 97%;
+}
+
+.not-found {
+  border: 1px grey dotted;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.records {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 8px 0px;
+}
+
+.records button {
+  background-color: orangered;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
   cursor: pointer;
 }
