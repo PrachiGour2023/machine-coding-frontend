@@ -1,12 +1,12 @@
 import "./App.css"
 import { ErrorBoundary } from "./ErrorBoundary";
-import ExpenseTracker from "./ExpenseTracker";
+import PriceRangeSlider from "./PriceRangeSlider";
 
 export default function App() {
 
   return (
     <ErrorBoundary>
-      <ExpenseTracker />
+      <PriceRangeSlider />
     </ErrorBoundary>
   );
 }
