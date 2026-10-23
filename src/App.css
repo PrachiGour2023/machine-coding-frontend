@@ -1,5 +1,14 @@
-.header {
+.container {
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
+}
+
+textarea {
+  width: 500px;
+  height: 100px;
+}
+
+.word-count {
+  font-weight: 700;
 }
