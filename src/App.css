@@ -1,14 +1,35 @@
 .container {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-textarea {
-  width: 500px;
-  height: 100px;
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
-.word-count {
-  font-weight: 700;
+.grid {
+  margin: 50px;
+}
+.grid-container {
+  display: flex;
+}
+
+.col {
+  background-color: rgb(234, 232, 232);
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.col.active {
+  background-color: greenyellow;
 }

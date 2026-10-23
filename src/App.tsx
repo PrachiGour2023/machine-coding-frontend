@@ -1,12 +1,12 @@
 import "./App.css"
 import { ErrorBoundary } from "./ErrorBoundary";
-import WordCounter from "./WordCounter";
+import GridLight from "./GridLight";
 
 export default function App() {
 
   return (
     <ErrorBoundary>
-      <WordCounter />
+      <GridLight />
     </ErrorBoundary>
   );
 }
