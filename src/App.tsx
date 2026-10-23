@@ -1,12 +1,12 @@
 import "./App.css"
 import { ErrorBoundary } from "./ErrorBoundary";
-import GridLight from "./GridLight";
+import PinItems from "./PinItems";
 
 export default function App() {
 
   return (
     <ErrorBoundary>
-      <GridLight />
+      <PinItems />
     </ErrorBoundary>
   );
 }
