@@ -1,8 +1,9 @@
+import CommentsApp from "./Comments"
 
 const Home = () => {
   return (
     <div className='container'>
-      <h2>Welcome to the home page</h2>
+      <CommentsApp />
     </div>
   )
 }
