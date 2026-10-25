@@ -1,8 +1,14 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
+
+interface CommentState {
+    id: number;
+    text: string;
+    replies: CommentState[]
+}
 
 const CommentsApp = () => {
 
-    const [comments, setComments] = useState<any>([]);
+    const [comments, setComments] = useState<CommentState[]>([]);
     const [newComment, setNewComment] = useState<string>("");
 
     const AddNewComment = () => {
@@ -17,8 +23,8 @@ const CommentsApp = () => {
     }
 
     const addReply = (id: number, text: string) => {
-        const addNestedComment = (commentList: any) => {
-            return commentList.map((comment: any) => {
+        const addNestedComment = (commentList: CommentState[]): CommentState[] => {
+            return commentList.map((comment: CommentState): CommentState => {
                 if (comment.id === id) {
                     return {
                         ...comment,
@@ -48,7 +54,7 @@ const CommentsApp = () => {
 
             <div>
                 {
-                    comments.map((comment: any) => (
+                    comments.map((comment: CommentState) => (
                         <Comment key={comment.id} comment={comment} addReply={addReply} />
                     ))
                 }
@@ -57,7 +63,10 @@ const CommentsApp = () => {
     )
 }
 
-function Comment({ comment, addReply }: any) {
+function Comment({ comment, addReply }: {
+    comment: CommentState;
+    addReply: (id: number, text: string) => void
+}) {
 
     const [showReplyInput, setShowReplyInput] = useState<boolean>(false)
     const [replyText, setReplyText] = useState<string>("")
@@ -71,9 +80,9 @@ function Comment({ comment, addReply }: any) {
     }
 
     return (
-        <div>
-            <p>{comment.text}</p>
-            <button onClick={() => setShowReplyInput(true)}>add a reply</button>
+        <div className='comment'>
+            <p className='comment-text'>{comment.text}</p>
+            <button className='add-reply' onClick={() => setShowReplyInput(true)}>add a reply</button>
 
             {
                 showReplyInput && (
@@ -86,7 +95,7 @@ function Comment({ comment, addReply }: any) {
 
             <div>
                 {
-                    comment.replies.map((reply: any) => (
+                    comment.replies.map((reply: CommentState) => (
                         <Comment key={reply.id} comment={reply} addReply={addReply} />
                     ))
                 }

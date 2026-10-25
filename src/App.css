@@ -113,3 +113,16 @@ h2 {
    width: 100%;
    padding: 10px;
 }
+
+.comment {
+  margin-left: 20px;
+  margin-top: 15px;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+}
+
+.add-reply {
+  background-color: white;
+  color: blue;
+  border: none;
+}
