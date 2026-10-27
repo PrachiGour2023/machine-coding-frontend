@@ -126,3 +126,12 @@ h2 {
   color: blue;
   border: none;
 }
+
+.check-box-container {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+  accent-color: red;
+}
