@@ -6,6 +6,7 @@ import { RouterProvider } from "react-router/dom";
 import Navbar from "./components/Navbar";
 import { lazy, Suspense } from "react";
 import NestedCheckbox from "./components/NestedCheckbox";
+import OTPInput from "./components/OTPInput";
 
 const Product = lazy(() => import('./components/Products'));
 const ProductDetails = lazy(() => import('./components/ProductDetails'));
@@ -53,7 +54,8 @@ export default function App() {
   return (
     <ErrorBoundary>
       {/* <RouterProvider router={router} /> */}
-      <NestedCheckbox />
+      {/* <NestedCheckbox /> */}
+      <OTPInput />
     </ErrorBoundary>
   );
 }
