@@ -1,9 +1,10 @@
-import CommentsApp from "./Comments"
+import Pagination from "./Pagination"
 
 const Home = () => {
   return (
     <div className='container'>
-      <CommentsApp />
+      {/* <CommentsApp /> */}
+      <Pagination />
     </div>
   )
 }

@@ -53,9 +53,9 @@ export default function App() {
 
   return (
     <ErrorBoundary>
-      {/* <RouterProvider router={router} /> */}
+      <RouterProvider router={router} />
       {/* <NestedCheckbox /> */}
-      <OTPInput />
+      {/* <OTPInput /> */}
     </ErrorBoundary>
   );
 }

@@ -6,6 +6,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -14,11 +15,11 @@ h2 {
 }
 
 .nav-container {
-   background-color: cadetblue;
-   padding: 10px;
-   display: flex;
-   justify-content: end;
-   gap: 20px;
+  background-color: cadetblue;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
 }
 
 .nav-item {
@@ -26,7 +27,7 @@ h2 {
   text-decoration: none;
   margin: 10px 15px;
   font-weight: 700;
-} 
+}
 
 .active {
   color: black;
@@ -68,14 +69,14 @@ h2 {
 .product-Item p {
   font-size: 14px;
   color: grey;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
 }
 
 .product-wrapper {
   display: flex;
   justify-content: center;
-  height:auto;
+  height: auto;
   align-items: center;
   min-height: 90vh;
 }
@@ -97,9 +98,9 @@ h2 {
 }
 
 .product-detail p {
-   font-size: 14px;
+  font-size: 14px;
   color: grey;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
 }
 
@@ -110,8 +111,8 @@ h2 {
 }
 
 .input {
-   width: 100%;
-   padding: 10px;
+  width: 100%;
+  padding: 10px;
 }
 
 .comment {
@@ -142,4 +143,40 @@ input[type="checkbox"] {
   margin: 10px;
   font-size: 30px;
   text-align: center;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  border: 1px solid grey;
+  text-align: center;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.product-item img {
+  width: 100px;
+  height: 100px;
+}
+
+.pagination {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  width: 30px;
+  height: 30px;
+  margin: 0px 3px;
+}
+
+.pagination button.active {
+  border: 2px solid blue;
+  border-radius: 2px;
 }
