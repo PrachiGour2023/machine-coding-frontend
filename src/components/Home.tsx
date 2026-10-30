@@ -1,10 +1,12 @@
+import DataTable from "./DataTable"
 import Pagination from "./Pagination"
 
 const Home = () => {
   return (
     <div className='container'>
       {/* <CommentsApp /> */}
-      <Pagination />
+      {/* <Pagination /> */}
+      <DataTable />
     </div>
   )
 }
