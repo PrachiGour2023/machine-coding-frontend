@@ -3,7 +3,7 @@ import Pagination from "./Pagination"
 
 const Home = () => {
   return (
-    <div className='container'>
+    <div>
       {/* <CommentsApp /> */}
       {/* <Pagination /> */}
       <DataTable />

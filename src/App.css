@@ -180,3 +180,14 @@ input[type="checkbox"] {
   border: 2px solid blue;
   border-radius: 2px;
 }
+
+.pagination-container {
+  display: flex;
+  justify-content:space-between;
+  margin: 10px 0px;
+}
+
+.flex-box {
+  gap: 10px;
+  display: flex;
+}
