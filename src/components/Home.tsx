@@ -1,12 +1,14 @@
 import DataTable from "./DataTable"
 import Pagination from "./Pagination"
+import ProductCart from "./ProductCart"
 
 const Home = () => {
   return (
-    <div>
+    <div className='container'>
       {/* <CommentsApp /> */}
       {/* <Pagination /> */}
-      <DataTable />
+      {/* <DataTable /> */}
+      <ProductCart />
     </div>
   )
 }

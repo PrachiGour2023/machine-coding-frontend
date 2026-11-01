@@ -191,3 +191,53 @@ input[type="checkbox"] {
   gap: 10px;
   display: flex;
 }
+
+.add-product-container {
+  display: flex;
+  background-color: rgb(255, 233, 207);
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input-detail {
+  display: flex;
+  gap: 10px;
+  justify-content:flex-end;
+  align-items: end;
+
+}
+
+.input-detail span {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.input-detail input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  margin-top: 6px;
+}
+
+.input-detail button {
+  background-color: rgb(44, 183, 44);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.product-display {
+ background-color: rgb(251, 249, 249);  
+ padding: 3px 10px;
+ border-radius: 8px;
+ margin: 10px 0px;
+ border: 1px solid gray;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
