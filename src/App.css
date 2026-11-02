@@ -183,7 +183,7 @@ input[type="checkbox"] {
 
 .pagination-container {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin: 10px 0px;
 }
 
@@ -205,7 +205,7 @@ input[type="checkbox"] {
 .input-detail {
   display: flex;
   gap: 10px;
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: end;
 
 }
@@ -232,12 +232,86 @@ input[type="checkbox"] {
 }
 
 .product-display {
- background-color: rgb(251, 249, 249);  
- padding: 3px 10px;
- border-radius: 8px;
- margin: 10px 0px;
- border: 1px solid gray;
- display: flex;
- justify-content: space-between;
- align-items: center;
+  background-color: rgb(251, 249, 249);
+  padding: 3px 10px;
+  border-radius: 8px;
+  margin: 10px 0px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.minus {
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 1px 10px;
+  font-size: large;
+}
+
+.plus {
+  background-color: rgb(22, 184, 22);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 1px 10px;
+  font-size: large;
+}
+
+.product-qty {
+  background-color: white;
+  padding: 2px 20px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.remove-product {
+  background-color: orangered;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.coupon-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(251, 249, 249);
+  padding: 8px;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+
+.coupon-col-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+
+.coupon-col-row input {
+  width: 100%;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.coupon-col-row button {
+  background-color: cornflowerblue;
+  border: 5px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 0px 20px;
+}
+
+.total {
+  font-weight: 600;
+}
+
+.coupon-applied {
+  color: green;
+  font-size: 16px;
 }
