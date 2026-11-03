@@ -5,9 +5,7 @@ import { createBrowserRouter, Outlet } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Navbar from "./components/Navbar";
 import { lazy, Suspense } from "react";
-import NestedCheckbox from "./components/NestedCheckbox";
-import OTPInput from "./components/OTPInput";
-import ProgressBar from "./components/ProgressBar";
+import CopyClipboard from "./components/CopyClipboard";
 
 const Product = lazy(() => import('./components/Products'));
 const ProductDetails = lazy(() => import('./components/ProductDetails'));
@@ -55,9 +53,7 @@ export default function App() {
   return (
     <ErrorBoundary>
       {/* <RouterProvider router={router} /> */}
-      {/* <NestedCheckbox /> */}
-      {/* <OTPInput /> */}
-      <ProgressBar />
+      <CopyClipboard />
     </ErrorBoundary>
   );
 }
