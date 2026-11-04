@@ -5,7 +5,7 @@ import { createBrowserRouter, Outlet } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Navbar from "./components/Navbar";
 import { lazy, Suspense } from "react";
-import CopyClipboard from "./components/CopyClipboard";
+import Counter from "./components/Counter";
 
 const Product = lazy(() => import('./components/Products'));
 const ProductDetails = lazy(() => import('./components/ProductDetails'));
@@ -53,7 +53,7 @@ export default function App() {
   return (
     <ErrorBoundary>
       {/* <RouterProvider router={router} /> */}
-      <CopyClipboard />
+      <Counter />
     </ErrorBoundary>
   );
 }
