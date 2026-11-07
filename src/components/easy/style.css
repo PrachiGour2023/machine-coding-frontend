@@ -1,0 +1,10 @@
+.back-to-top-container {
+    margin-bottom: 2.5rem;
+}
+
+.back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+}
