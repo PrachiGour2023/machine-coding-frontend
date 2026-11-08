@@ -4,7 +4,7 @@ import './style.css';
 const data = Array.from({ length: 40 }, (_, i) => i)
 const BackToTop = () => {
 
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState<boolean>(false);
 
     useEffect(() => {
         const handleScroll = () => {
