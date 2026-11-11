@@ -5,7 +5,7 @@ const InputFocus = () => {
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   const handleInputFocus = () => {
-     inputRef.current.focus();
+    inputRef.current?.focus();
   }
 
   return (
